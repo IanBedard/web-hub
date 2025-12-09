@@ -1,0 +1,57 @@
+/* DaisyUI Hover 3D Card Effect */
+.hover-3d {
+  perspective: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.hover-3d figure {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.hover-3d:hover figure {
+  transform: rotateX(5deg) rotateY(10deg) scale(1.02);
+}
+
+.hover-3d > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+.hover-3d > div:nth-child(2) {
+  transform: translateZ(20px);
+}
+
+.hover-3d > div:nth-child(3) {
+  transform: translateZ(-20px);
+}
+
+.hover-3d > div:nth-child(4) {
+  transform: rotateX(90deg) translateZ(20px);
+}
+
+.hover-3d > div:nth-child(5) {
+  transform: rotateX(-90deg) translateZ(20px);
+}
+
+.hover-3d > div:nth-child(6) {
+  transform: rotateY(90deg) translateZ(20px);
+}
+
+.hover-3d > div:nth-child(7) {
+  transform: rotateY(-90deg) translateZ(20px);
+}
+
+.hover-3d > div:nth-child(8) {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.hover-3d > div:nth-child(9) {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+}
