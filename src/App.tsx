@@ -114,9 +114,9 @@ function App() {
       </div>
 
       <main className="container mx-auto p-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           {/* Left column */}
-          <div className="lg:col-span-4 space-y-6">
+          <div className="lg:col-span-4 space-y-6 flex flex-col justify-between">
             <div className="bg-base-100 shadow p-6 h-40">
               <h2 className="text-2xl font-semibold">{tr('app.welcomeTitle')}</h2>
               <p className="text-sm opacity-70 mt-2">{tr('app.welcomeBody')}</p>
@@ -152,7 +152,7 @@ function App() {
           </div>
 
           {/* Right column */}
-          <div className="lg:col-span-8 space-y-6">
+          <div className="lg:col-span-8 space-y-6 flex flex-col justify-between">
         
 
 
