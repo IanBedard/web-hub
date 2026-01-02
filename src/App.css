@@ -94,18 +94,18 @@
 
 .wave.-one {
   background: rgba(0, 194, 243, 0.3);
-  animation: drift 7000ms infinite linear;
+  animation: drift 21000ms infinite linear;
   opacity: 0.4;
 }
 
 .wave.-two {
   background: rgba(0, 59, 92, 0.2);
-  animation: drift 3000ms infinite linear;
+  animation: drift 9000ms infinite linear;
   opacity: 0.2;
 }
 
 .wave.-three {
   background: rgba(0, 194, 243, 0.2);
-  animation: drift 7500ms infinite linear;
+  animation: drift 22500ms infinite linear;
   opacity: 0.3;
 }

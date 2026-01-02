@@ -121,8 +121,8 @@ const YearBarChart = ({ language = 'fr' }: { language?: 'en' | 'fr' }) => {
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
-  <XAxis dataKey="name" tickFormatter={(v) => monthMap[v as string] || (v as string)} />
-      <YAxis width="auto" />
+  <XAxis stroke="#00c2f3" dataKey="name" tickFormatter={(v) => monthMap[v as string] || (v as string)} />
+      <YAxis stroke="#00c2f3" width="auto" />
       <Tooltip />
       <Legend />
         <Bar name={t('charts.tickets2026', language as any)} dataKey="tickets2026" fill="#2e94adff" activeBar={<Rectangle fill="#00c2f3" stroke="#0d5b88ff" />} />
