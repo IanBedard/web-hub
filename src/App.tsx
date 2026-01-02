@@ -59,7 +59,16 @@ function App() {
 
   return (
     <div className="min-h-screen bg-base-200">
-      {/* Navbar */}
+      {/* Wave Background Animation */}
+      <div className="wave-container">
+        <div className="wave -one"></div>
+        <div className="wave -two"></div>
+        <div className="wave -three"></div>
+      </div>
+
+      {/* Content with z-index to appear above waves */}
+      <div className="relative z-10">
+        {/* Navbar */}
       <div className="navbar bg-base-100 shadow-md">
         <div className="flex-1 px-6">
           <a className="text-2xl font-bold">{tr('app.title')}</a>
@@ -117,24 +126,24 @@ function App() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           {/* Left column */}
           <div className="lg:col-span-4 space-y-6 flex flex-col justify-between">
-            <div className="bg-base-100 shadow p-6 h-40">
+            <div className="bg-base-100 card-glass shadow p-6 h-40">
               <h2 className="text-2xl font-semibold">{tr('app.welcomeTitle')}</h2>
               <p className="text-sm opacity-70 mt-2">{tr('app.welcomeBody')}</p>
 
             </div>
         {/* Stats */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="stat bg-base-100 shadow p-4">
+              <div className="stat bg-base-100 shadow p-4 card-glass">
                 <div className="stat-title">{tr('stats.totalTools')}</div>
                 <div className="stat-value">6</div>
                 <div className="stat-desc">{tr('stats.updated')}</div>
               </div>
-              <div className="stat bg-base-100 shadow p-4">
+              <div className="stat bg-base-100 shadow p-4 card-glass">
                 <div className="stat-title">{tr('stats.activeProjects')}</div>
                 <div className="stat-value">8</div>
                 <div className="stat-desc">{tr('stats.hot')}</div>
               </div>
-              <div className="stat bg-base-100 shadow p-4">
+              <div className="stat bg-base-100 shadow p-4 card-glass">
                 <div className="stat-title">{tr('stats.visitors')}</div>
                 <div className="stat-value">12.4k</div>
                 <div className="stat-desc">+4.2% {tr('stats.visitors-month')}</div>
@@ -142,7 +151,7 @@ function App() {
             </div>
 
 
-            <div className="bg-base-100 shadow p-4">
+            <div className="bg-base-100 shadow p-4 card-glass">
               <h3 className="font-medium mb-4">{tr('projectUpdates.title')}</h3>
               <ProjectUpdate language={lang} />
             </div>
@@ -158,23 +167,23 @@ function App() {
 
             {/* Charts */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-base-100 shadow p-4">
+              <div className="bg-base-100 shadow p-4 card-glass">
                 <h5 className="font-medium text-center mb-2">{tr('charts.contentTitle')}</h5>
                 <RadialWebsite language={lang} />
               </div>
-              <div className="bg-base-100 shadow p-4">
+              <div className="bg-base-100 shadow p-4 card-glass">
                 <h5 className="font-medium text-center mb-2">{tr('charts.latest4')}</h5>
                 <LatestChart language={lang} />
               </div>
             </div>
 
-             <div className="bg-base-100 shadow p-4">
+             <div className="bg-base-100 shadow p-4 card-glass">
               <h5 className="font-medium text-center mb-2">{tr('charts.yearTitle')}</h5>
               <YearBarChart language={lang} />
             </div>
             
             {/* Tool Cards */}
-            <div className="bg-base-100 shadow p-4">
+            <div className="bg-base-100 shadow p-4 card-glass">
               <h4 className="font-medium mb-4">{tr('app.quickTools')}</h4>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <ToolCard title={tr('tool.converter')} icon="✏️" />
@@ -186,6 +195,7 @@ function App() {
           </div>
         </div>
       </main>
+      </div>
     </div>
   );
 }
