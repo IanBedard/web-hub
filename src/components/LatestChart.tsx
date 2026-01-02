@@ -53,8 +53,8 @@ const LatestChart = ({ language = 'fr' }: { language?: 'en' | 'fr' }) => {
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
-  <XAxis dataKey="name" tickFormatter={(v) => monthMap[v as string] || (v as string)} />
-      <YAxis width="auto" />
+  <XAxis stroke="#00c2f3" dataKey="name" tickFormatter={(v) => monthMap[v as string] || (v as string)} />
+      <YAxis stroke="#00c2f3" width="auto" />
       <Tooltip />
       <Legend />
  <Bar name={t('charts.InProgress', language as any)} dataKey="InProgress" fill="#00d791" activeBar={<Rectangle fill="#00d78fa1" stroke="#0d5b88ff" />} />
