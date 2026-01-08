@@ -42,10 +42,10 @@ const translations: Record<Locale, Record<string, string>> = {
     'tool.excel': 'Excel',
     'tool.converter2': 'Converter',
     // Stats
-    'stats.totalTools': 'Total Tools',
-    'stats.updated': 'Updated 2 days ago',
-    'stats.activeProjects': 'Active Projects',
-    'stats.hot': '3 hot',
+    'stats.totalTools': 'Total Files',
+    'stats.updated': 'Updated in 2026',
+    'stats.activeProjects': 'Departments served',
+    'stats.hot': 'Updated in 2026',
     'stats.visitors': "Visitors (30d)", 
     'stats.visitors-month': "last month",
   // Project titles
@@ -101,10 +101,10 @@ const translations: Record<Locale, Record<string, string>> = {
     'tool.excel': 'Excel',
     'tool.converter2': 'Convertisseur',
     // Stats
-    'stats.totalTools': "Total des outils",
-    'stats.updated': 'Mis à jour il y a 2 jours',
-    'stats.activeProjects': 'Projets actifs',
-    'stats.hot': '3 urgent',
+    'stats.totalTools': "Nombre total de fichiers",
+    'stats.updated': 'Mis à jour en 2026',
+    'stats.activeProjects': 'Départements servit',
+    'stats.hot': 'Mis à jour en 2026',
     'stats.visitors': "Visiteurs (30j)",
     'stats.visitors-month': "mois passé",
   // Project titles

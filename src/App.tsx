@@ -135,12 +135,12 @@ function App() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="stat bg-base-100 shadow p-4 card-glass">
                 <div className="stat-title">{tr('stats.totalTools')}</div>
-                <div className="stat-value">6</div>
+                <div className="stat-value">11'500</div>
                 <div className="stat-desc">{tr('stats.updated')}</div>
               </div>
               <div className="stat bg-base-100 shadow p-4 card-glass">
                 <div className="stat-title">{tr('stats.activeProjects')}</div>
-                <div className="stat-value">8</div>
+                <div className="stat-value">12</div>
                 <div className="stat-desc">{tr('stats.hot')}</div>
               </div>
               <div className="stat bg-base-100 shadow p-4 card-glass">
