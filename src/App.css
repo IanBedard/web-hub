@@ -133,19 +133,19 @@
 }
 
 .wave.-one {
-  background: rgba(0, 194, 243, 0.097);
-  animation: drift 21000ms infinite linear;
-  opacity: 0.4;
+  background: #00c3f3;
+  animation: drift 26s infinite linear;
+  opacity: 0.1;
 }
 
 .wave.-two {
-  background: rgba(0, 58, 92, 0.067);
-  animation: drift 9000ms infinite linear;
-  opacity: 0.2;
+  background: #2d7eac;
+  animation: drift 28s infinite linear;
+  opacity: 0.1;
 }
 
 .wave.-three {
-  background: rgba(0, 194, 243, 0.085);
-  animation: drift 22500ms infinite linear;
-  opacity: 0.3;
+  background: #003c5c;
+  animation: drift 27s infinite linear;
+  opacity: 0.1;
 }
