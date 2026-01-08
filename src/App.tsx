@@ -140,7 +140,7 @@ function App() {
               </div>
               <div className="stat bg-base-100 shadow p-4 card-glass">
                 <div className="stat-title">{tr('stats.activeProjects')}</div>
-                <div className="stat-value">12</div>
+                <div className="stat-value">49</div>
                 <div className="stat-desc">{tr('stats.hot')}</div>
               </div>
               <div className="stat bg-base-100 shadow p-4 card-glass">
