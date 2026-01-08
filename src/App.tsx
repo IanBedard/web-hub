@@ -167,10 +167,20 @@ function App() {
 
             {/* Charts */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-base-100 shadow p-4 card-glass">
-                <h5 className="font-medium text-center mb-2">{tr('charts.contentTitle')}</h5>
-                <RadialWebsite language={lang} />
-              </div>
+ <div 
+  className="bg-base-100 shadow p-4 card-glass clickable transition-shadow" 
+  onClick={() => window.open('https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/structure.html', '_blank')}
+  role="button"
+  tabIndex={0}
+  onKeyPress={(e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      window.open('https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/structure.html', '_blank');
+    }
+  }}
+>
+  <h5 className="font-medium text-center mb-2">{tr('charts.contentTitle')}</h5>
+  <RadialWebsite language={lang}  />
+</div>
               <div className="bg-base-100 shadow p-4 card-glass">
                 <h5 className="font-medium text-center mb-2">{tr('charts.latest4')}</h5>
                 <LatestChart language={lang} />
@@ -186,10 +196,10 @@ function App() {
             <div className="bg-base-100 shadow p-4 card-glass">
               <h4 className="font-medium mb-4">{tr('app.quickTools')}</h4>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <ToolCard title={tr('tool.converter')} icon="✏️" />
-                <ToolCard title={tr('tool.bilat')} icon="📊" />
-                <ToolCard title={tr('tool.excel')} icon="📑" />
-                <ToolCard title={tr('tool.more')} icon="+" outline />
+                <ToolCard title={tr('tool.converter')} icon="✏️" className='clickable card-glass'/>
+                <ToolCard title={tr('tool.bilat')} icon="📊" className='clickable card-glass' />
+                <ToolCard title={tr('tool.excel')} icon="📑" className='clickable card-glass ' />
+                <ToolCard title={tr('tool.converter2')} icon="📜" className='clickable card-glass ' />
               </div>
             </div>
           </div>
@@ -197,7 +207,7 @@ function App() {
       </main>
       </div>
     </div>
-  );
+  ); 
 }
 
 export default App

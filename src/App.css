@@ -57,6 +57,8 @@
 }
 
 .card-glass {
+
+  
   @apply relative overflow-hidden rounded-lg border border-white/20 shadow-2xl;
   background: linear-gradient(
     135deg,
@@ -84,7 +86,10 @@
   mask-composite: exclude;
   pointer-events: none;
 }
-
+.clickable:hover{
+  background-color: #2d7eac3d;
+ transition: 0.2s ease-in-out;
+}
 .card-glass::after {
   content: '';
   position: absolute;

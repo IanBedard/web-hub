@@ -40,7 +40,7 @@ const translations: Record<Locale, Record<string, string>> = {
     'tool.converter': 'Converter',
     'tool.bilat': 'Bilat',
     'tool.excel': 'Excel',
-    'tool.more': 'More',
+    'tool.converter2': 'Converter',
     // Stats
     'stats.totalTools': 'Total Tools',
     'stats.updated': 'Updated 2 days ago',
@@ -99,7 +99,7 @@ const translations: Record<Locale, Record<string, string>> = {
     'tool.converter': 'Convertisseur',
     'tool.bilat': 'Bilat',
     'tool.excel': 'Excel',
-    'tool.more': 'Plus',
+    'tool.converter2': 'Convertisseur',
     // Stats
     'stats.totalTools': "Total des outils",
     'stats.updated': 'Mis à jour il y a 2 jours',

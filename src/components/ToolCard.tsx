@@ -18,21 +18,28 @@ export default function ToolCard({
     <div 
       className={`
         ${outline 
-          ? 'border-2 border-dashed border-gray-300 bg-white' 
-          : 'bg-pspc-navy'
+          ? 'border-2 border-dashed border-base-300 bg-base-100' 
+          : 'bg-base-200'
         } 
         rounded-lg p-6 flex flex-col items-center justify-center 
         cursor-pointer hover:opacity-80 transition-opacity
         ${className}
       `}
       onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyPress={(e) => {
+        if (onClick && (e.key === 'Enter' || e.key === ' ')) {
+          onClick();
+        }
+      }}
     >
       {icon && (
-        <div className={`text-3xl mb-2 ${outline ? 'text-gray-400' : 'text-white'}`}>
+        <div className="text-3xl mb-2 text-base-content">
           {icon}
         </div>
       )}
-      <span className={`text-sm font-medium ${outline ? 'text-gray-500' : 'text-white'}`}>
+      <span className="text-sm font-medium text-base-content">
         {title}
       </span>
     </div>
