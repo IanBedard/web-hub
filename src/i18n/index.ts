@@ -13,7 +13,7 @@ const translations: Record<Locale, Record<string, string>> = {
     'table.status': 'Status',
     'charts.tickets2024': 'Tickets 2024',
     'charts.tickets2025': 'Tickets 2025',
-     'charts.tickets2026': 'Tickets 2025',
+     'charts.tickets2026': 'Tickets 2026',
       'charts.InProgress': 'In Progress',
     'charts.Created': 'Created',
      'charts.Resolved': 'Resolved',

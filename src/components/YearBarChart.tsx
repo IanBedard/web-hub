@@ -5,7 +5,7 @@ import { t, months } from '../i18n';
 const data = [
   {
     name: 'Jan',
-    tickets2026: 0,
+    tickets2026: 185,
     tickets2025: 130,
     tickets2024: 75,
     trend: 103
@@ -82,8 +82,8 @@ const data = [
   },
     {
     name: 'Dec',
-    tickets2025: 0,
-    tickets2026: 45,
+    tickets2025: 146,
+    tickets2026: 0,
     tickets2024: 88,
        trend: 95
   },
